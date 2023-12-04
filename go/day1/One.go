@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 )
@@ -37,11 +38,15 @@ func One(fileLines []string) int {
 
 func ReadFile() []string {
 
-	fileName := "input.txt"
+	absPath, err := filepath.Abs("../../input/day1/input.txt")
+
+	if err != nil {
+		panic(err)
+	}
 
 	var lines []string
 
-	file, err := os.Open(fileName)
+	file, err := os.Open(absPath)
 
 	if err != nil {
 		panic(err)
