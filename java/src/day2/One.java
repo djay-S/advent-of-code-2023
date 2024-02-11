@@ -87,6 +87,13 @@ class Game {
         }
     }
 
+    public Game(Game game) {
+        this.gameId = game.gameId;
+        this.red = game.red;
+        this.green = game.green;
+        this.blue = game.blue;
+    }
+
     @Override
     public String toString() {
         return "Game{" +
