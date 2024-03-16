@@ -1,4 +1,4 @@
-package src.day2.day3;
+package src.day3;
 
 import src.utils.FileReaderUtil;
 
