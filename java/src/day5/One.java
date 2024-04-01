@@ -119,7 +119,7 @@ public class One {
         return value;
     }
 
-    private static void populateRange(int idx, List<String> lines, List<Range> rangeList) {
+    static void populateRange(int idx, List<String> lines, List<Range> rangeList) {
         System.out.println(lines.get(idx));
         idx++;
 
