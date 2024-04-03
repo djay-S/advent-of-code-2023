@@ -10,7 +10,8 @@ import java.util.stream.Collectors;
 
 public class One {
 
-    public static final List<Character> cardOrder = List.of('A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2');
+    public static final List<Character> cardOrder = List.of('A', 'K', 'Q', 'T', '9', '8', '7', '6', '5', '4', '3', '2', 'J'); //New Order for two
+//    public static final List<Character> cardOrder = List.of('A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2');
     private static final Logger LOGGER = Logger.getLogger(One.class.getName());
 
     public static void main(String[] args) throws IOException {
