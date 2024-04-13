@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.util.*;
 import java.util.logging.Logger;
 
-import static src.day10.One.DIRECTIONS.*;
+import static src.day10.OneOldDFS.DIRECTIONS.*;
 
-public class One {
+public class OneOldDFS {
     private static final Logger LOGGER;
 
     public enum DIRECTIONS {UP, DOWN, RIGHT, LEFT};
@@ -41,7 +41,7 @@ public class One {
 
     static {
         System.setProperty("java.util.logging.SimpleFormatter.format", "[%1$tF %1$tT] [%4$-7s] %5$s %n");
-        LOGGER = Logger.getLogger(One.class.getName());
+        LOGGER = Logger.getLogger(OneOldDFS.class.getName());
     }
 
     public static void main(String[] args) throws IOException {
